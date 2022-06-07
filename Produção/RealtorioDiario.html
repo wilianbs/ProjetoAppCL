@@ -3,31 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=.8">
     <title>Realtorio Diario</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="styleRelatorioDiario.css">
+    <script src="scriptProducao.js" defer></script>
 </head>
 <body>
-    <h1>Relatorio Diario</h1>
+    <div class="topo">
+        <h1>RELATORIO DE ACOMPANHAMENTO DIARIO DE PRODUÇÃO - BMB</h1>
+        <p>Sopradora <input class="nsop" type="number" name="sopradora" id="sopradora" min="1"></p>
+    </div>
     <div class="Cabeca">
-        <p>Cod do Produto<input type="text" name="Codigo do Produto" id="CodProd"></p>
+        <p>Cod. Prod.<input type="text" name="Codigo do Produto" id="CodProd"></p>
+        <p>OP N.: <input type="text" name="" id=""></p>
         <p>Lote <input type="text" name="lote" id="lote"></p>
         <p>Cavidade <input type="text" name="Ncavidade" id="Ncavidade"></p>
         <p>Cliente <input type="text" name="Cliente" id="Cliente"></p>
         <p>Data <input type="date" name="data" id="data"></p>
-        <p>Sopradora <input type="number" name="sopradora" id="sopradora"></p>
+        
     </div>
     <div class="operador">
         <p>Turno <input type="text" name="turno" id="turno"></p>
         <p>Nomes <input type="text" name="nomes" id="nomes"></p>
         <p>Carimbo <input type="number" name="carimbo" id="carimbo"></p>
 
-    </div><br>
-    <div class="dados">
-        <p class="hora">06:00 07:00 </p><p class="dadoshora">01,02,03,04,05,06,07,08,09,10</p>
-
+    </div><br><hr><br> 
+    <div class="txtLista">
+        <div  class="txtLista1">
+            <p>Hora</p> <p>Numero da Etiqueta</p> <p>BPH</p>
+        </div>
+         <div class="txtLista2">
+            <p>Camera <br> de visão</p> <p>Teste<br>de Slug</p> <p>Teste de<br>Usinagem</p> <p>Teste<br>de Furo</p>
+        </div>
     </div>
+        <div class="linhaDeDados">
+            <div class="dados">
+                <p class="hora">06:00 </p>
+                <div class="dadosProd">
+                    
+                </div>
+                <input class="btm" id="menos" type="button" value="-" onclick="retirarElementos()">
+                <input class="btm" id="mais" type="button" value="+" onclick="adicionarElementos()">
+                <input type="number" name="bph" id="bph" min="1">
+            </div> 
+            <div>
+                <select name="selecionar" id="condicao">
+                    <option class="PROD" value="PRODUÇÃO">PRODUÇÃO</option>
+                    <option class="PAR" value="PARADA">PARADA</option>
+                    <option class="AJUS" value="AJUSTE">AJUSTE</option>
+                    <option class="RETRA" value="RETRABALHO">RETRABALHO</option>
+                    
+                </select>
+            </div>
+            <div class="linhaBotao">
+                <input class="teste" type="button" value="ok">
+                <input class="teste" type="button" value="ok">
+                <input class="teste" type="button" value="ok">
+                <input class="teste" type="button" value="ok">
+            </div>
+           
+        </div>
+       
 
 
 

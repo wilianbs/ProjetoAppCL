@@ -1,9 +1,10 @@
 body, html {
     
     border: solid black 1px;
-    width: 1450px;
-    height: 950px;
+    width: 1300px;
+    height: 800px;
     margin: auto;    
+    
     
 }
 h1{
@@ -37,21 +38,21 @@ h1{
     margin-left: 10px;
     padding-right: 16px;
     display: flex;
-   background: rgba(162, 162, 162, 0.33);
-   width: 1410px;
+   background: rgba(179, 177, 177, 0.33);
+   width: 1255px;
    justify-content: space-between;
      
 }
 .txtLista1{
-    width: 900px;
+    width: 1200px;
     margin-left: 10px;
     display: flex;
     justify-content: space-between;
   
 }
 .txtLista2{
-    margin-left: 10px;
-    width: 300px;
+    margin-left: 50px;
+    width: 400px;
     justify-content: space-between;
     display: flex;
  
@@ -59,10 +60,16 @@ h1{
 input{
     width: 130px;
 }
+span{
+    font-weight: 500;
+    font-size: 19px;
+    padding-bottom: 6px;
+    display:inline;
+    
+}
 .dadosProd{
     width: 700px;
     text-align: left;
- 
     
 }
 .linha1{
@@ -77,12 +84,12 @@ p{
 .hora{
     margin-left: 10px;
     padding-left: 5px;
-    font-size: 10px;
+    height: 35px;
     display: flex;
     width: 5px;
-    background: rgba(146, 146, 247, 0.5);
+    background: rgba(124, 115, 255, 0.4);
     width: 40px;
-    font-size: 15px;
+    font-size: 16px;
    
 }
 .dados{  
@@ -119,7 +126,8 @@ select#condicao{
     margin-left: 5px;
 }
 select{
-    background: rgba(0, 0, 255, 0.300);
+    background: rgba(0, 0, 255, 0.089);
+    font-weight: 600;
    
 }
 .PROD{

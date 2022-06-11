@@ -23,12 +23,25 @@
         <p>Data <input type="date" name="data" id="data"></p>
         
     </div>
+    <br>
+    <hr>
+    <br> 
     <div class="operador">
         <p>Turno <input type="text" name="turno" id="turno"></p>
         <p>Nomes <input type="text" name="nomes" id="nomes"></p>
         <p>Carimbo <input type="number" name="carimbo" id="carimbo"></p>
-
-    </div><br><hr><br> 
+    <div>
+            <select name="selecionar" id="condicao" oninput="selecionar()">
+                <option class="PROD" value="PROD">PRODUÇÃO</option>
+                <option class="PAR" value="PARA">PARADA</option>
+                <option class="AJUS" value="AJUS">AJUSTE</option>
+                <option class="RETRA" value="RETRA">RETRABALHO</option>
+                
+            </select>
+        </div>
+    </div>
+   
+    <br>
     <div class="txtLista">
         <div  class="txtLista1">
             <p>Hora</p> <p>Numero da Etiqueta</p> <p>BPH</p>
@@ -41,21 +54,13 @@
             <div class="dados">
                 <p class="hora">06:00 </p>
                 <div class="dadosProd">
-                    
+                    <span></span>
                 </div>
                 <input class="btm" id="menos" type="button" value="-" onclick="retirarElementos()">
                 <input class="btm" id="mais" type="button" value="+" onclick="adicionarElementos()">
                 <input type="number" name="bph" id="bph" min="1">
             </div> 
-            <div>
-                <select name="selecionar" id="condicao">
-                    <option class="PROD" value="PRODUÇÃO">PRODUÇÃO</option>
-                    <option class="PAR" value="PARADA">PARADA</option>
-                    <option class="AJUS" value="AJUSTE">AJUSTE</option>
-                    <option class="RETRA" value="RETRABALHO">RETRABALHO</option>
-                    
-                </select>
-            </div>
+           
             <div class="linhaBotao">
                 <input class="teste" type="button" value="ok">
                 <input class="teste" type="button" value="ok">
@@ -64,6 +69,196 @@
             </div>
            
         </div>
+        <hr>
+       
+        </div>
+            <div class="linhaDeDados">
+                <div class="dados">
+                    <p class="hora">07:00 </p>
+                    <div class="dadosProd">
+                        <span></span>
+                    </div>
+                    <input class="btm" id="menos" type="button" value="-" onclick="retirarElementos()">
+                    <input class="btm" id="mais" type="button" value="+" onclick="adicionarElementos()">
+                    <input type="number" name="bph" id="bph" min="1">
+                </div> 
+               
+            </div>
+            <hr>
+            <div class="linhaDeDados">
+                <div class="dados">
+                    <p class="hora">08:00 </p>
+                    <div class="dadosProd">
+                        <span></span>
+                    </div>
+                    <input class="btm" id="menos" type="button" value="-" onclick="retirarElementos()">
+                    <input class="btm" id="mais" type="button" value="+" onclick="adicionarElementos()">
+                    <input type="number" name="bph" id="bph" min="1">
+                </div> 
+               
+                <div class="linhaBotao">
+                    <input class="teste" type="button" value="ok">
+                    <input class="teste" type="button" value="ok">
+                    <input class="teste" type="button" value="ok">
+                    <input class="teste" type="button" value="ok">
+                </div>
+               
+            </div>
+            <hr>
+           
+    </div>
+        <div class="linhaDeDados">
+            <div class="dados">
+                <p class="hora">09:00 </p>
+                <div class="dadosProd">
+                    <span></span>
+                </div>
+                <input class="btm" id="menos" type="button" value="-" onclick="retirarElementos()">
+                <input class="btm" id="mais" type="button" value="+" onclick="adicionarElementos()">
+                <input type="number" name="bph" id="bph" min="1">
+            </div> 
+            
+        </div>
+        <hr> <div class="linhaDeDados">
+            <div class="dados">
+                <p class="hora">10:00 </p>
+                <div class="dadosProd">
+                    <span></span>
+                </div>
+                <input class="btm" id="menos" type="button" value="-" onclick="retirarElementos()">
+                <input class="btm" id="mais" type="button" value="+" onclick="adicionarElementos()">
+                <input type="number" name="bph" id="bph" min="1">
+            </div> 
+            
+            <div class="linhaBotao">
+                <input class="teste" type="button" value="ok">
+                <input class="teste" type="button" value="ok">
+                <input class="teste" type="button" value="ok">
+                <input class="teste" type="button" value="ok">
+            </div>
+            
+        </div>
+        <hr>
+        
+    </div>
+        <div class="linhaDeDados">
+            <div class="dados">
+                <p class="hora">11:00 </p>
+                <div class="dadosProd">
+                    <span></span>
+                </div>
+                <input class="btm" id="menos" type="button" value="-" onclick="retirarElementos()">
+                <input class="btm" id="mais" type="button" value="+" onclick="adicionarElementos()">
+                <input type="number" name="bph" id="bph" min="1">
+            </div> 
+            
+        </div>
+        <hr> <div class="linhaDeDados">
+            <div class="dados">
+                <p class="hora">12:00 </p>
+                <div class="dadosProd">
+                    <span></span>
+                </div>
+                <input class="btm" id="menos" type="button" value="-" onclick="retirarElementos()">
+                <input class="btm" id="mais" type="button" value="+" onclick="adicionarElementos()">
+                <input type="number" name="bph" id="bph" min="1">
+            </div> 
+            
+            <div class="linhaBotao">
+                <input class="teste" type="button" value="ok">
+                <input class="teste" type="button" value="ok">
+                <input class="teste" type="button" value="ok">
+                <input class="teste" type="button" value="ok">
+            </div>
+            
+        </div>
+        <hr>
+        
+        </div>
+            <div class="linhaDeDados">
+                <div class="dados">
+                    <p class="hora">13:00 </p>
+                    <div class="dadosProd">
+                        <span></span>
+                    </div>
+                    <input class="btm" id="menos" type="button" value="-" onclick="retirarElementos()">
+                    <input class="btm" id="mais" type="button" value="+" onclick="adicionarElementos()">
+                    <input type="number" name="bph" id="bph" min="1">
+                </div> 
+                
+            </div>
+        <hr>
+        <div class="linhaDeDados">
+            <div class="dados">
+                <p class="hora">14:00 </p>
+                <div class="dadosProd">
+                    <span></span>
+                </div>
+                <input class="btm" id="menos" type="button" value="-" onclick="retirarElementos()">
+                <input class="btm" id="mais" type="button" value="+" onclick="adicionarElementos()">
+                <input type="number" name="bph" id="bph" min="1">
+            </div> 
+            
+            <div class="linhaBotao">
+                <input class="teste" type="button" value="ok">
+                <input class="teste" type="button" value="ok">
+                <input class="teste" type="button" value="ok">
+                <input class="teste" type="button" value="ok">
+            </div>
+            
+        </div>
+        <hr>
+        
+        </div>
+            <div class="linhaDeDados">
+                <div class="dados">
+                    <p class="hora">15:00 </p>
+                    <div class="dadosProd">
+                        <span></span>
+                    </div>
+                    <input class="btm" id="menos" type="button" value="-" onclick="retirarElementos()">
+                    <input class="btm" id="mais" type="button" value="+" onclick="adicionarElementos()">
+                    <input type="number" name="bph" id="bph" min="1">
+                </div> 
+                
+            </div>
+            <hr> 
+        <div class="linhaDeDados">
+            <div class="dados">
+                <p class="hora">16:00 </p>
+                <div class="dadosProd">
+                    <span></span>
+                </div>
+                <input class="btm" id="menos" type="button" value="-" onclick="retirarElementos()">
+                <input class="btm" id="mais" type="button" value="+" onclick="adicionarElementos()">
+                <input type="number" name="bph" id="bph" min="1">
+            </div> 
+            
+            <div class="linhaBotao">
+                <input class="teste" type="button" value="ok">
+                <input class="teste" type="button" value="ok">
+                <input class="teste" type="button" value="ok">
+                <input class="teste" type="button" value="ok">
+            </div>
+            
+        </div>
+        <hr>
+        
+        </div>
+            <div class="linhaDeDados">
+                <div class="dados">
+                    <p class="hora">17:00 </p>
+                    <div class="dadosProd">
+                        <span></span>
+                    </div>
+                    <input class="btm" id="menos" type="button" value="-" onclick="retirarElementos()">
+                    <input class="btm" id="mais" type="button" value="+" onclick="adicionarElementos()">
+                    <input type="number" name="bph" id="bph" min="1">
+                </div> 
+                
+            </div>
+            <hr>
+                                
        
 
 
